@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { useParams } from 'react-router-dom';
 
 
-const News = (carddetails) => {
-  const { id, name, image, details } = carddetails;
+const News = () => {
+  const { id, name, image, details } = useParams();
 const [cardDetails,setCardDetails]=useState()
 
 useEffect(()=>{
@@ -15,19 +16,19 @@ useEffect(()=>{
     <div className="">
       <div className="">
         <div className="col-span-3">
-          <h2 className="text-5xl  font-bold">Our Service Details:</h2>
+          <h2 className="text-5xl  font-bold">Our Service Details:{id}</h2>
           <div>
-            <h2>{carddetails.id}</h2>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            
+            <div className="card w-96 mx-auto mt-12 mb-12 bg-slate-100 shadow-lg">
               <figure>
                 <img
-                  src={carddetails.image}
+                  src={image}
                   alt="Shoes"
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">{carddetails.name}</h2>
-                <p>{carddetails.details}</p>
+                <h2 className="card-title">{name}</h2>
+                <p>{details}</p>
                
               </div>
             </div>
