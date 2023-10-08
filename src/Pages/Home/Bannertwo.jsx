@@ -1,6 +1,6 @@
 const Bannertwo = () => {
   return (
-    <div className="mb-12">
+    <div className="mb-12 shadow-lg bg-slate-100 p-10">
       <h2 className="text-4xl text-center font-extrabold">WHO WE ARE</h2>
       <p className="font-semibold">
         With a perfect blend of experience and passion, Dhaka Event Planner is
