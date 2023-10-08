@@ -2,6 +2,8 @@
 import { useLoaderData } from 'react-router-dom';
 import Banner from './Banner';
 import Servicecard from '../Servicecard/Servicecard';
+import Bannertwo from './Bannertwo';
+import Bannerthree from './Bannerthree';
 
 
 
@@ -25,6 +27,8 @@ const Home = () => {
               
             </div>
         </div>
+        <Bannertwo></Bannertwo>
+        <Bannerthree></Bannerthree>
         </div>
     );
 };

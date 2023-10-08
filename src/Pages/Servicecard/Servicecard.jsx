@@ -9,9 +9,9 @@ const Servicecard = ({services}) => {
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     {
-            details.length >200 ? <p>{details.slice(0,200)}<Link 
+            details.length >100 ? <p>{details.slice(0,100)}<Link 
             to={`/service/${id}`}
-            className="text-pink-500 font-bold"> Read More</Link></p>
+            className="text-pink-500 font-bold"> View Details</Link></p>
             :
             <p>{details}</p>
         }
