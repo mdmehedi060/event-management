@@ -12,7 +12,9 @@ const Home = () => {
     const services =useLoaderData()
     // console.log(services);
     return (
-        <div>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
            <Banner></Banner>
     
         <div>
