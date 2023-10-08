@@ -2,6 +2,7 @@
 import { Link,useLocation,useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { Authcontext } from "../../Provider/Authprovider";
+import swal from "sweetalert";
 
 
 
@@ -29,10 +30,11 @@ const handleLogin = (e) => {
       
       // navigate after login
       navigate(location?.state ? location.state : '/');
-
+      swal("Good job!", "Your login successfully", "success");
     })
 
     .catch(error=>console.error(error))
+   
   };
 
 const handleGoogle =(e)=>{
