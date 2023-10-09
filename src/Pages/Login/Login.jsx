@@ -34,7 +34,6 @@ const handleLogin = (e) => {
     })
 
     .catch(error=>console.error(error))
-    swal("error!", "Email & Password do not match", "error");
   };
 
 const handleGoogle =(e)=>{
